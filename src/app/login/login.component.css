@@ -1,0 +1,39 @@
+#main{
+  transform:translateY(50%);
+  position:relative;
+}
+.pane{
+  text-align: center;
+}
+.admin{
+  font-size: 20px;
+}
+.pane{
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius:15px;
+  background: hsla(0,0%,100%,.2);
+  position:relative;
+  overflow: hidden;
+}
+.pane::before{
+  background: url(../../assets/img/background2.jpg) 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter:blur(100px);
+  z-index: -1;
+  margin:-30px;
+}
+.login input{
+  border:0;
+  background-color:transparent ;
+  BORDER-BOTTOM: #ffffff 1px solid;
+  color:#FFFFFF;
+}
+/*.login button{
+	background-color: transparent;
+}*/
